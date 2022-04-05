@@ -1,20 +1,21 @@
 <template>
-  <div class="hola">
-    <h1>{{ msg }}</h1>
-  
-   
+  <div>
+    <img alt="Panda logo" src="../assets/pandita.png" />
+    Welcome!
   </div>
+
+  <button type="button" class="btn btn-primary" @click="goToLoginPage()">
+    Login
+  </button>
 </template>
 
 <script>
 export default {
-  name: 'HolaMundo',
-  props: {
-    msg: String
-  }
-}
+  name: "MainPage",
+  methods: {
+    goToLoginPage() {
+      this.$router.push("/Login");
+    },
+  },
+};
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-</style>

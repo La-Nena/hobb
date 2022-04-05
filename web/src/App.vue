@@ -1,17 +1,11 @@
 <template>
-  <img alt="Panda logo" src="./assets/pandita.png">
-  <MainPage msg="Welcome to the landing page!"/>
+  <router-view></router-view>
 </template>
 
 <script>
-import MainPage from './components/MainPage.vue'
-
 export default {
-  name: 'App',
-  components: {
-    MainPage
-  }
-}
+  name: "App",
+};
 </script>
 
 <style>
@@ -24,3 +18,5 @@ export default {
   margin-top: 60px;
 }
 </style>
+
+
